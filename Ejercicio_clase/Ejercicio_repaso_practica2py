@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Aug 28 10:57:56 2026
+
+@author: Estudiante
+"""
+# %% Repaso practica 2- Ejercicio 1
+acumulado=0.0
+contador=0
+for i in range(0,4):
+    pp=float(input("ingrese el valor de pp en mm:"))
+    if pp>1:
+        acumulado+=pp
+        contador=contador + 1
+promedio= acumulado/contador
+if contador == 0:
+    print("El promedio no fue calculado")
+else:
+    print(promedio)
+    
+    
+# %% Ejercicio 2
+suma_mayores_7=0
+cantidad_mayores_7=0
+total_notas=15
+for i in range(1,total_notas+1):
+    nota=float(input(f"Ingrese las calificaciones {i} (entre 0 y 10):"))
+    while nota<0 or nota>10:
+            print("la calificacion debe estar entre 0 y 10")
+            nota=float(input(f"Reingrese la calificacion {i}:"))
+    if nota>=7:
+        suma_mayores_7+=nota
+        cantidad_mayores_7+=1
+if cantidad_mayores_7 > 0:
+    promedio=suma_mayores_7 / cantidad_mayores_7
+    print(f"El promedio de las calificaciones mayores o iguales a 7 es de : {promedio}")
+else:
+    print("El promedio no fue calculado")
+    
+
+
+
+
