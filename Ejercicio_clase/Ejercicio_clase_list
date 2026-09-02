@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Sep  2 11:13:03 2026
+
+@author: Estudiante
+"""
+
+#Ejercicio en clase
+
+alumnos=[["Gaston","Franco","Martin","Juan"],[1.70,1.68,1.77,1.80]]
+edades=(23,27,21,25)
+alumnos.append(edades)
+promedio = sum(edades)/4
+alumnos.append(promedio)
+mayor_altura = max(alumnos[1])
+posición =alumnos[1].index(mayor_altura)
+print(f"El alumno de mayor altura es {alumnos[0][posición]}  y su edad es  {alumnos[2][posición]}.")
+
